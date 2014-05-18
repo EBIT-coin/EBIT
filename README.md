@@ -1,74 +1,71 @@
-DarkCoin integration/staging tree
+EBIT Baseline/Development Tree
 ================================
+http://www.ebit-coin.com
 
-http://www.darkcoin.io
+Copyright (c) 2014 EBIT Development Team
 
-Copyright (c) 2009-2013 Bitcoin Developers
-Copyright (c) 2013-2014 DarkCoin Developers
 
-What is DarkCoin?
-----------------
+What is EBIT?
+-------------
 
-DarkCoin is a lite version of Bitcoin using X11 as a proof-of-work algorithm.
- - Super secure hashing algorithm: 11 rounds of scientific hashing functions (blake, bmw, groestl, jh, keccak, skein, luffa, cubehash, shavite, simd, echo)
- - Block reward is controlled by moore's law: 2222222/(((Difficulty+2600)/9)^2)
- - GPU/CPU only mining
- - Block generation: 2.5 minutes
- - Difficulty Retargets every block using Dark Gravity Wave
- - Est. ~7M Coins in 2015, ~13M in 2020, ~23M in 2030
- - Anonymous blockchain using DarkSend technology (Based on CoinJoin): Beta Testing
+EBIT is an open-source digital currency (Cryptocurrency) that focuses on better
+defining and optimizing a methodology of distribution and life-cycle design. 
+EBIT is dervied  utilizing the X11 proof-of-work algorithm but is 
+unique in that uses an adaptive dynamic-response difficulty algorithm coupled
+with a countinuous decay reward curve to create a currency model that is far
+more robust than its predecessors.
 
-For more information, as well as an immediately useable, binary version of
-the DarkCoin client sofware, see http://www.darkcoin.io.
 
-License
--------
+Acknowledgements:
+-----------------
 
-DarkCoin is released under the terms of the MIT license. See `COPYING` for more
-information or see http://opensource.org/licenses/MIT.
+The vast majority of the EBIT code is derivative of the original Bitcoin model 
+for a 'cryptocurrency'. The EBIT Development team also added variations from 
+Dogecoin and Darkcoin in order to create the baseline code that was used during
+the initial development stages of EBIT.
 
-Development process
+See 'Copying' or 'License' for more information.
+
+
+Development Process
 -------------------
 
-Developers work in their own trees, then submit pull requests when they think
-their feature or bug fix is ready.
+[In-Progress, to be updated]
+ 
+We are analyzing the current process of cryptocurrency development and defining
+to effectively take advantage of the unique skillsets that each member of a 
+community has and collectively define a process which allows efforts to be
+focused on accomplishing specific goals while at the same time allowing any 
+developer the freedom to add to or improve upon the project in any way.
 
-If it is a simple/trivial/non-controversial change, then one of the DarkCoin
-development team members simply pulls it.
+As development progresses and we begin to ask other developers to review our 
+initial code, we will create a set of processes (above any beyond the versioning 
+utilitites provided by github used on typical open-source projects) for better 
+defining the development process throughout the lifecyle of EBIT. 
 
-If it is a *more complicated or potentially controversial* change, then the patch
-submitter will be asked to start a discussion (if they haven't already) on the
-[mailing list](http://sourceforge.net/mailarchive/forum.php?forum_name=bitcoin-development).
 
-The patch will be accepted if there is broad consensus that it is a good thing.
-Developers should expect to rework and resubmit patches if the code doesn't
-match the project's coding conventions (see `doc/coding.txt`) or are
-controversial.
+Resources
+---------
+[To be added]
 
-The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/bitcoin/bitcoin/tags) are created
-regularly to indicate new official, stable release versions of DarkCoin.
 
 Testing
 -------
 
-Testing and code review is the bottleneck for development; we get more pull
-requests than we can review and test. Please be patient and help out, and
-remember this is a security-critical project where any mistake might cost people
-lots of money.
+The EBIT team is currently analyzing and re-writing existing tests for the 
+Bitcoin & Darkcoin projects. A System's level test plan and integration process
+will be developed which will serve as a guideline to developers looking to
+contribute to the project. These guidelines do not constrain the specifics of 
+how test code is to be written; rather to classify and focus the subject of 
+testing in order to make measurable improvments.
 
-### Automated Testing
 
-Developers are strongly encouraged to write unit tests for new code, and to
-submit new unit tests for old code.
+Miscellaneous
+-------------
+[To be added]
 
-Unit tests for the core code are in `src/test/`. To compile and run them:
 
-    cd src; make -f makefile.unix test
-
-Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
-
-    qmake BITCOIN_QT_TEST=1 -o Makefile.test bitcoin-qt.pro
-    make -f Makefile.test
-    ./darkcoin-qt_test
+License
+-------
+[To be added]
 
